@@ -184,8 +184,7 @@ public class CheckstyleMetadata {
      */
     private void constructParams(String checkName, RulesDefinition.NewParam param,
                                         ModulePropertyDetails modulePropertyDetails) {
-        param.setDescription(modulePropertyDetails.getDescription())
-                .setDefaultValue(modulePropertyDetails.getDefaultValue());
+        param.setDescription(modulePropertyDetails.getDescription());
         final String paramType = modulePropertyDetails.getType();
         if (modulePropertyDetails.getValidationType() != null
             && "tokenSet".equals(modulePropertyDetails.getValidationType())) {

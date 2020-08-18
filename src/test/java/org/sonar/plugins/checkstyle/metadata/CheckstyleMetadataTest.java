@@ -83,9 +83,6 @@ public class CheckstyleMetadataTest {
                     assertEquals("Description doesn't match for param: " + key,
                             modulePropertyDetails.getDescription(),
                             param.description());
-                    assertEquals("Default value doesn't match for param: " + key,
-                            modulePropertyDetails.getDefaultValue(),
-                            param.defaultValue());
                 }
             });
         });
@@ -113,8 +110,6 @@ public class CheckstyleMetadataTest {
                     final RulesDefinition.Param modParam = modRule.param(paramKey);
                     assertEquals("Description doesn't match for param: " + paramKey,
                             origParam.description(), modParam.description());
-                    assertEquals("Default value doesn't match for param: " + paramKey,
-                            origParam.defaultValue(), modParam.defaultValue());
                     assertEquals("Type doesn't match for param: " + paramKey, origParam.type(),
                             modParam.type());
                 }
